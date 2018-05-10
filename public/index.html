@@ -4,5 +4,25 @@
 </head>
 <body>
 Welcome to chat app
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+    socket.on('connect', () => {
+        console.log("Connected to server!!");
+        socket.emit("msg", {name: "nihal", age: 23, gender: "Alpha Male"});
+    });
+    socket.on("sendToken", () => {
+        socket.emit("sendToken",{token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJua3VtYXJAZ21haWwuY29tIiwiaWF0IjoxNTI1ODc3MDM4LCJleHAiOjE1MjU5NjM0Mzh9.nKpEHOMDo7Eba-k-FJq54xalxFKrBrbopz6-7spUTfw"});
+    });
+
+    socket.on("msg", (msg) => {
+        console.log("msg from server::", msg);
+    });
+    socket.on('disconnect', () => {
+       console.log("Disconnected");
+    });
+</script>
+<input type="text">
+<input type="">
 </body>
 </html>
