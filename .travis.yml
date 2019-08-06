@@ -5,5 +5,5 @@ before_install:
   - docker build -t chatty-travis -f ./Dockerfile .
 # script: to execute test cases
 after_success:
-  - echo "DOCKER_PASSWD" | docker login -u "$DOCKER_USR" --ppassword=stdin
+  - echo "DOCKER_PASSWD" | docker login -u "$DOCKER_USR" --password=stdin
   - docker push chatty-travis
