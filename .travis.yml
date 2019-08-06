@@ -10,5 +10,5 @@ before_install:
 script:
 - echo "skipping tests"
 after_success:
-  - echo "DOCKER_PASSWD" | docker login -u "$DOCKER_USR" --password=stdin
+  - echo "$DOCKER_PASSWD" | docker login -u "$DOCKER_USR" --password=stdin
   - docker push chatty-travis
