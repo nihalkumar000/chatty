@@ -2,8 +2,8 @@ sudo : required
 services:
   - docker
 before_install:
-  - docker build -t chattyTravis -f ./Dockerfile .
+  - docker build -t chatty-travis -f ./Dockerfile .
 # script: to execute test cases
 after_success:
   - echo "DOCKER_PASSWD" | docker login -u "$DOCKER_USR" --ppassword=stdin
-  - docker push chattyTravis
+  - docker push chatty-travis
