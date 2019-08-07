@@ -6,9 +6,9 @@ node_js:
 services:
   - docker
 before_install:
-  - docker build -t chatty-travis -f ./Dockerfile .
+  - docker build -t nkumar36/chatty-travis -f ./Dockerfile .
 script:
 - echo "skipping tests"
 after_success:
   - echo "$DOCKER_PASSWD" | docker login -u "$DOCKER_USR" --password-stdin
-  - docker push chatty-travis
+  - docker push nkumar36/chatty-travis
