@@ -12,22 +12,22 @@
   NVM is used to manage and switch between various node version.
   To install or update nvm, you should run the install script. To do that, you may either download and run the script   manually, or use the following cURL or Wget command:
   
-  $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+    $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
 ### Node installation:
   
-  $ nvm install v8.9
-  $ nvm use v8.9
+    $ nvm install v8.9
+    $ nvm use v8.9
 
 ### Insatll Project dependencies listed in package.json
   
-  $ npm install 
+    $ npm install 
 
 ## Install
   
-  $ git clone https://bitbucket.corp.itradenetwork.net/YOUR_USERNAME/PROJECT_TITLE
-  $ cd PROJECT_TITLE
-  $ npm install
+    $ git clone https://bitbucket.corp.itradenetwork.net/YOUR_USERNAME/PROJECT_TITLE
+    $ cd PROJECT_TITLE
+    $ npm install
 
 ## Configure app
 
