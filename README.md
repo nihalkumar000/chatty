@@ -1,12 +1,13 @@
 # DMA Item-Mapper
-DMA Item-Mapper functionality is used by DMA to Create/maintain a DMA 'master' catalog of distributor products (aka 'Items') which were actually purchased (identified from distributer invoices) by the DMA distributor accounts. As different distributors can have the same item in their respective catalogs, Item-mapper 'maps' (cross-references) the distributor's items to the DMA master catalog item. Any products which show up in distributers's invoices and are not listed in distributer's Master catalog needs mapping to Distributer Master Catalog. These products are shown in Item-mapper UI's  `Needs Attention Workspace`, based on changes in concerned fields of a product.
+DMA Item-Mapper functionality is used by DMA to Create/maintain a DMA Master Catalog of Distributor products (aka 'Items') which were actually purchased (identified from distributer invoices) by the DMA distributor accounts. As different distributors can have the same item in their respective catalogs, Item-mapper 'maps' (cross-references) the distributor's items to the DMA Master Catalog item. Any products which show up in distributers's invoices and are not listed in Master catalog needs mapping to Master Catalog. These products are shown in Item-mapper UI's  `Needs Attention Workspace`, based on changes in concerned fields of a product.
 
 ---
 ## Requirements
 
-For development, you will only need Node.js and a node global package, npm, nvm installed in your environement.
+For development, you will only need Node.js, npm, nvm installed in your environement.
 
-## Set up running Environment:
+## Set up running Environment
+
 Project uses Angular CLI v6. Angular CLI v6 runs on minimum node version of v8.9
 ### NVM installation:
 NVM is used to manage and switch between various node version.
