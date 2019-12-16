@@ -11,7 +11,7 @@ For development, you will only need Node.js, npm, nvm installed in your environe
 Project uses Angular CLI v6. Angular CLI v6 runs on minimum node version of v8.9
 ### NVM installation:
 NVM is used to manage and switch between various node version.
-To install or update nvm, you should run the install script. To do that, you may either download and run the script manually, or use the following cURL or Wget command:
+To install or update nvm, you should run the install script. To do that, you may either download and run the script manually, or use the following cURL command:
     
     $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 
@@ -26,7 +26,7 @@ To install or update nvm, you should run the install script. To do that, you may
 
 ## Install
     
-    $ git clone https://bitbucket.corp.itradenetwork.net/YOUR_USERNAME/PROJECT_TITLE
+    $ git clone https://bitbucket.corp.itradenetwork.net//PROJECT_TITLE
     $ cd PROJECT_TITLE
     $ npm install
 
